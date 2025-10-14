@@ -104,8 +104,6 @@ Avoid amending commits that were already pushed to a shared repository — it re
 
 A **Git branch** is a separate line of development that lets you work on new features or fixes without affecting the main project (the **master** branch). You can make changes safely in your branch, then **merge** it back when ready, keeping your workflow organized and controlled.
 
-### Branch Commands
-
 **Create a new branch:**
 
 ```bash
@@ -126,18 +124,12 @@ You’ll see an asterisk (\*) next to the current branch.
 git switch branch-name
 ```
 
-**Rename current branch:**
-
-```bash
-git branch -m new-name
-```
-
 ### Merging Branches
 
 1. Switch to the target branch (usually `master`):
 
    ```bash
-   git checkout master
+   git switch master
    ```
 
 2. Merge the branch:
@@ -216,7 +208,6 @@ dist/
 .env
 ```
 
-> You can create it manually in your project root:
-> `new-item .gitignore`
+You can create it manually in your project root: `new-item .gitignore`
 
 For pattern syntax, check: [W3Schools .gitignore Patterns](https://www.w3schools.com/git/git_ignore.asp)
